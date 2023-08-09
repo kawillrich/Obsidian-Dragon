@@ -16,7 +16,7 @@ const utils = {
 
         
 
-        const size = 2;
+        const size = 1;
 
         if (direction === "left") {
             x -= size;

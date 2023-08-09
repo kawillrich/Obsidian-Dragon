@@ -25,7 +25,10 @@ class OverworldMap {
 
     isSpaceTaken(currentX, currentY, direction) {
         const {x,y} = utils.nextPosition(currentX,currentY, direction);
+            console.log(x, y);
+            console.log(this.walls[`${x},${y}`] || false)
             return this.walls[`${x},${y}`] || false;
+
         }
     }
 
