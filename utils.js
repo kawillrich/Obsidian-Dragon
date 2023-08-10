@@ -10,6 +10,11 @@ const utils = {
         return `${x*16},${y*16}`
     },
 
+
+    wallGrid(num) {
+        return num * 16;
+    },
+
     nextPosition(initialX, initialY, direction) {
         let x = initialX;
         let y = initialY;
@@ -29,8 +34,8 @@ const utils = {
 
             y += size;
         }
-
         return {x,y};
+
     }
     
 }

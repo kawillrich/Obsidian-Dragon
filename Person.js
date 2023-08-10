@@ -21,8 +21,9 @@ class Person extends GameObject {
             this.direction = state.arrow;
             // console.log(OverworldMaps.DemoRoom.walls);
             // console.log(state.arrow);
+            // console.log(this.x, this.y);
             console.log(state.map.isSpaceTaken(this.x, this.y, this.direction))
-            console.log(this.movingProgressRemaining);
+            // console.log(this.movingProgressRemaining);
             this.movingProgressRemaining = 2;
         }
     }

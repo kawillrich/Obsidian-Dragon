@@ -45,7 +45,7 @@ class Overworld {
     init() {
         //can start on new map by changing 'DemoRoom' property to new map locaiton
         this.map = new OverworldMap(window.OverworldMaps.DemoRoom)
-        console.log(this.map.walls)
+        console.log(this.map)
         this.directionInput = new DirectionInput();
         this.directionInput.init();
 
