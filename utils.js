@@ -19,9 +19,9 @@ const utils = {
         let x = initialX;
         let y = initialY;
 
-        
+        //const size corresponds with directionUpdate() from Person.js
 
-        const size = 1;
+        const size = 5;
 
         if (direction === "left") {
             x -= size;
