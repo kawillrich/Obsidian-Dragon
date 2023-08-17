@@ -2,7 +2,6 @@ class Person extends GameObject {
     constructor(config) {
         super(config);
         this.movingProgressRemaining = 0;
-
         this.isPlayerControlled = config.isPlayerControlled || false;
 
         this.directionUpdate = {            
@@ -31,12 +30,24 @@ class Person extends GameObject {
 
     startBehavior(state, behavior) {
         //set character direction to behavior direction
-        this.direction = behavior.direction;   
+        this.direction = behavior.direction;  
+         
         if (behavior.type === "walk")   {      
-            //stop here if space isn't free 
-            if (state.map.isSpaceTaken(this.x, this.y, this.direction)) {
+            //stop here if space isn't free a
+            console.log(state.map.checkMonster(this.x, this.y, this.direction))
+            // console.log(state.map.isSpaceTaken(this.x, this.y, this.direction))
+            if (state.map.isSpaceTaken(this.x, this.y, this.direction) )
+            {
                 return;
-            }            
+            } else     
+
+            if (state.map.checkMonster(this.x, this.y, this.direction) )
+            {
+                console.log('monster')
+                return;
+            } 
+
+        // state.map.moveWall(this.x, this.y, this.direction);
         this.movingProgressRemaining = 1;
         }
     }

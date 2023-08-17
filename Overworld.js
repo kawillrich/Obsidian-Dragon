@@ -12,6 +12,8 @@ class Overworld {
             //clear canvas
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
+            
+
             //establish camera view
             const cameraPerson = this.map.gameObjects.hero;
 
@@ -22,6 +24,8 @@ class Overworld {
                     map: this.map,
                 });
             })
+
+            
 
             //draw lower layer
             this.map.drawLowerImage(this.ctx, cameraPerson);
@@ -38,6 +42,8 @@ class Overworld {
             requestAnimationFrame(() => {
                 step();
             })
+
+            
         }
         step();
     }
@@ -45,10 +51,10 @@ class Overworld {
     init() {
         //can start on new map by changing 'DemoRoom' property to new map locaiton
         this.map = new OverworldMap(window.OverworldMaps.DemoRoom)
-        console.log(this.map)
+        
         this.directionInput = new DirectionInput();
         this.directionInput.init();
-
+        
 
         this.startGameLoop();
     }

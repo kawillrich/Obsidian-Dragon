@@ -23,7 +23,7 @@ class OverworldMap {
             utils.withGrid20(11.0) - cameraPerson.y)
     }
 
-    isSpaceTaken(currentX, currentY, direction) {
+    isSpaceTaken(currentX, currentY, direction) {        
         const {x,y} = utils.nextPosition(currentX,currentY, direction);            
             for (let i = 0; i < this.walls.coords.length; i++) {
                 if (
@@ -45,14 +45,62 @@ class OverworldMap {
                     )
                 )  {
                     console.log("wall")
+                    console.log(this.walls.coords[i][0], this.walls.coords[i][1])
                     return true;
                 }               
-        }
-            return this.walls[`${x},${y}`] || false;
-        }
-
+            }            
+            return false;
+    }
+    
+    checkMonster(currentX, currentY, direction) {        
+        const {x,y} = utils.nextPosition(currentX,currentY, direction);   
+        
+        for (let prop in this.gameObjects) 
+	    {
+            // console.log(prop)//only prints the name of the property 'names'
+            // console.log(this.gameObjects[prop])//only prints one object of all names because there's only one property in obj called names
+            for (let name in this.gameObjects[prop]) {
+            //console.log(name)//prints the property name
+                // console.log(this.gameObjects[prop][name])//console logs out the name i.e. value of key
+                if (!this.gameObjects[prop].isPlayerControlled ) {
+                    // console.log('monster')
+                    // console.log(this.gameObjects[prop].x, this.gameObjects[prop].y)//, prop.y)
+                    // console.log(x, y)
+                    if ((
+                            x + 18 >= this.gameObjects[prop].x && 
+                            x + 3 <= this.gameObjects[prop].x + 29
+                        ) && (
+                            y + 33 >= this.gameObjects[prop].y && 
+                            y <= this.gameObjects[prop].y + 36
+                        ))       
+                    {
+                        // console.log('enemy')
+                        return true;
+                    } else {
+                        return false;
+                    }  
+                }          
+		    }
+	    }           
+    }
+        
+    addWall(x,y,ctx) {
+        this.walls.coords.push([x,y]);
+        ctx.fillRect(x, y, 16, 16)
     }
 
+    removeWall(x,y) {
+        let source = [x, y];
+        for (let i = 0; i < this.walls.length; i++ ) {		
+            if (this.walls[i][0] === source[0]) {					
+                if (this.walls[i][1] === source[1]) {						
+                    this.walls.splice(this.walls.indexOf(coords[i]), 1)
+                }
+            } 
+        }
+        console.log("new coords", this.walls)
+    }        
+}   
 
 window.OverworldMaps = {
     DemoRoom: {
@@ -61,15 +109,16 @@ window.OverworldMaps = {
         gameObjects: {
             
             enemy: new Person({
-                x: utils.withGrid16(7),
-                y: utils.withGrid20(7),
+                x: utils.withGrid16(5),
+                y: utils.withGrid16(5),
                 src: "images/characters/kobold.png",
                 isMonster: true
             }), 
             hero: new Person({
                 isPlayerControlled: true,
-                x: utils.withGrid16(5),
-                y: utils.withGrid20(6),
+                x: utils.withGrid16(7),
+                y: utils.withGrid16(7),
+                name: "Hero"
             }),
         },
           
@@ -99,11 +148,8 @@ window.OverworldMaps = {
                 [utils.wallGrid(3), utils.wallGrid(3)],
                 [utils.wallGrid(4), utils.wallGrid(3)],
             ]
-            // [utils.asGridCoord(0,0)]: true,
-            
-            },              
+            // [utils.asGridCoord(0,0)]: true,            
+        },              
     }
-
     //can add more rooms here
-
 }
