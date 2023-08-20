@@ -76,7 +76,7 @@ class Sprite {
         if (this.gameObject.isMonster) {
             const x = this.gameObject.x - 24 + utils.withGrid16(27.5) - cameraPerson.x;
             const y = this.gameObject.y - 12 + utils.withGrid20(11.0) - cameraPerson.y;
-            this.isShadowLoaded && ctx.drawImage(this.shadow, x + 23, y + 2)
+            this.isShadowLoaded && ctx.drawImage(this.shadow, x + 23, y + 12)
             this.isLoaded && ctx.drawImage(
                 this.image,
                 0,

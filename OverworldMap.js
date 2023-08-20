@@ -99,7 +99,13 @@ class OverworldMap {
             } 
         }
         console.log("new coords", this.walls)
-    }        
+    }    
+    
+    moveWall(wasX, wasY, direction) {
+        this.removeWall(wasX, wasY);
+        const {x, y} = utils.nextPosition(wasX, wasY, direction);
+        this.addWall(x, y);
+    }
 }   
 
 window.OverworldMaps = {
@@ -109,7 +115,7 @@ window.OverworldMaps = {
         gameObjects: {
             
             enemy: new Person({
-                x: utils.withGrid16(5),
+                x: utils.withGrid16(11),
                 y: utils.withGrid16(5),
                 src: "images/characters/kobold.png",
                 isMonster: true
@@ -124,11 +130,7 @@ window.OverworldMaps = {
           
         walls: {
             coords: [
-                [utils.wallGrid(0), utils.wallGrid(0)],
-                [utils.wallGrid(1), utils.wallGrid(0)],
-                [utils.wallGrid(2), utils.wallGrid(0)],
-                [utils.wallGrid(3), utils.wallGrid(0)],
-                [utils.wallGrid(4), utils.wallGrid(0)],
+              
 
                 [utils.wallGrid(0), utils.wallGrid(1)],
                 [utils.wallGrid(1), utils.wallGrid(1)],
