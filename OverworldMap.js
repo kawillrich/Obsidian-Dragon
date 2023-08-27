@@ -131,7 +131,7 @@ window.OverworldMaps = {
         walls: {
             coords: [
               
-
+                //upper left platform
                 [utils.wallGrid(0), utils.wallGrid(1)],
                 [utils.wallGrid(1), utils.wallGrid(1)],
                 [utils.wallGrid(2), utils.wallGrid(1)],
@@ -149,6 +149,143 @@ window.OverworldMaps = {
                 [utils.wallGrid(2), utils.wallGrid(3)],
                 [utils.wallGrid(3), utils.wallGrid(3)],
                 [utils.wallGrid(4), utils.wallGrid(3)],
+
+                //upper left pond
+                
+                [utils.wallGrid(2), utils.wallGrid(5)],
+                [utils.wallGrid(3), utils.wallGrid(5)],
+                [utils.wallGrid(4), utils.wallGrid(5)],
+                [utils.wallGrid(5), utils.wallGrid(5)],
+                
+                [utils.wallGrid(2), utils.wallGrid(6)],
+                [utils.wallGrid(3), utils.wallGrid(6)],
+                [utils.wallGrid(4), utils.wallGrid(6)],
+                [utils.wallGrid(5), utils.wallGrid(6)],
+                
+                [utils.wallGrid(2), utils.wallGrid(7)],
+                [utils.wallGrid(3), utils.wallGrid(7)],
+                [utils.wallGrid(4), utils.wallGrid(7)],
+                [utils.wallGrid(5), utils.wallGrid(7)],
+
+                //double platform
+
+                [utils.wallGrid(17), utils.wallGrid(21)],
+                [utils.wallGrid(17), utils.wallGrid(22)],
+                [utils.wallGrid(17), utils.wallGrid(23)],
+                [utils.wallGrid(17), utils.wallGrid(24)],
+
+                [utils.wallGrid(18), utils.wallGrid(21)],
+                [utils.wallGrid(18), utils.wallGrid(22)],
+                [utils.wallGrid(18), utils.wallGrid(23)],
+                [utils.wallGrid(18), utils.wallGrid(24)],
+
+                [utils.wallGrid(19), utils.wallGrid(21)],
+                [utils.wallGrid(19), utils.wallGrid(22)],
+                [utils.wallGrid(19), utils.wallGrid(23)],
+                [utils.wallGrid(19), utils.wallGrid(24)],
+
+                [utils.wallGrid(20), utils.wallGrid(21)],
+                [utils.wallGrid(20), utils.wallGrid(22)],
+                [utils.wallGrid(20), utils.wallGrid(23)],
+                [utils.wallGrid(20), utils.wallGrid(24)],
+
+                [utils.wallGrid(21), utils.wallGrid(21)],
+                [utils.wallGrid(21), utils.wallGrid(22)],
+                [utils.wallGrid(21), utils.wallGrid(23)],
+                [utils.wallGrid(21), utils.wallGrid(24)],
+
+                [utils.wallGrid(20), utils.wallGrid(20)],
+
+                [utils.wallGrid(21), utils.wallGrid(20)],
+
+                [utils.wallGrid(22), utils.wallGrid(20)],
+                [utils.wallGrid(22), utils.wallGrid(21)],
+                [utils.wallGrid(22), utils.wallGrid(22)],
+                [utils.wallGrid(22), utils.wallGrid(23)],
+
+
+                [utils.wallGrid(23), utils.wallGrid(20)],
+                [utils.wallGrid(23), utils.wallGrid(21)],
+                [utils.wallGrid(23), utils.wallGrid(22)],
+                [utils.wallGrid(23), utils.wallGrid(23)],
+
+                //cave entrance
+
+                [utils.wallGrid(35), utils.wallGrid(26)],
+                [utils.wallGrid(35), utils.wallGrid(27)],
+                [utils.wallGrid(35), utils.wallGrid(28)],
+                [utils.wallGrid(35), utils.wallGrid(29)],
+                [utils.wallGrid(35), utils.wallGrid(30)],
+                [utils.wallGrid(35), utils.wallGrid(31)],
+
+                [utils.wallGrid(36), utils.wallGrid(26)],
+                [utils.wallGrid(36), utils.wallGrid(27)],
+                [utils.wallGrid(36), utils.wallGrid(28)],
+                [utils.wallGrid(36), utils.wallGrid(29)],
+                [utils.wallGrid(36), utils.wallGrid(30)],
+                [utils.wallGrid(36), utils.wallGrid(31)],
+
+                [utils.wallGrid(37), utils.wallGrid(26)],
+                [utils.wallGrid(37), utils.wallGrid(27)],
+                [utils.wallGrid(37), utils.wallGrid(28)],
+                [utils.wallGrid(37), utils.wallGrid(29)],
+                [utils.wallGrid(37), utils.wallGrid(30)],
+                [utils.wallGrid(37), utils.wallGrid(31)],
+                [utils.wallGrid(37), utils.wallGrid(32)],
+
+
+                [utils.wallGrid(38), utils.wallGrid(26)],
+                [utils.wallGrid(38), utils.wallGrid(27)],
+                [utils.wallGrid(38), utils.wallGrid(28)],
+                [utils.wallGrid(38), utils.wallGrid(29)],
+                [utils.wallGrid(38), utils.wallGrid(30)],
+                [utils.wallGrid(38), utils.wallGrid(31)],
+                [utils.wallGrid(38), utils.wallGrid(32)],
+
+
+                [utils.wallGrid(39), utils.wallGrid(26)],
+                [utils.wallGrid(39), utils.wallGrid(27)],
+                [utils.wallGrid(39), utils.wallGrid(28)],
+                [utils.wallGrid(39), utils.wallGrid(29)],
+                [utils.wallGrid(39), utils.wallGrid(30)],
+                [utils.wallGrid(39), utils.wallGrid(31)],
+                [utils.wallGrid(39), utils.wallGrid(32)],
+
+
+                [utils.wallGrid(40), utils.wallGrid(26)],
+                [utils.wallGrid(40), utils.wallGrid(27)],
+                [utils.wallGrid(40), utils.wallGrid(28)],
+                [utils.wallGrid(40), utils.wallGrid(29)],
+                [utils.wallGrid(40), utils.wallGrid(30)],
+                [utils.wallGrid(40), utils.wallGrid(31)],
+                [utils.wallGrid(40), utils.wallGrid(32)],
+
+
+                [utils.wallGrid(41), utils.wallGrid(26)],
+                [utils.wallGrid(41), utils.wallGrid(27)],
+                [utils.wallGrid(41), utils.wallGrid(28)],
+                [utils.wallGrid(41), utils.wallGrid(29)],
+                [utils.wallGrid(41), utils.wallGrid(30)],
+                [utils.wallGrid(41), utils.wallGrid(31)],
+                [utils.wallGrid(41), utils.wallGrid(32)],
+
+
+                [utils.wallGrid(42), utils.wallGrid(26)],
+                [utils.wallGrid(42), utils.wallGrid(27)],
+                [utils.wallGrid(42), utils.wallGrid(28)],
+                [utils.wallGrid(42), utils.wallGrid(29)],
+                [utils.wallGrid(42), utils.wallGrid(30)],
+                [utils.wallGrid(42), utils.wallGrid(31)],
+                [utils.wallGrid(42), utils.wallGrid(32)],
+
+
+                [utils.wallGrid(43), utils.wallGrid(26)],
+                [utils.wallGrid(43), utils.wallGrid(27)],
+                [utils.wallGrid(43), utils.wallGrid(28)],
+                [utils.wallGrid(43), utils.wallGrid(29)],
+                [utils.wallGrid(43), utils.wallGrid(30)],
+                [utils.wallGrid(43), utils.wallGrid(31)],
+
             ]
             // [utils.asGridCoord(0,0)]: true,            
         },              
