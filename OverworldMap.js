@@ -169,63 +169,60 @@ window.OverworldMaps = {
 
                 //double platform
 
-                [utils.wallGrid(17), utils.wallGrid(21)],
+                // [utils.wallGrid(17), utils.wallGrid(21)],
                 [utils.wallGrid(17), utils.wallGrid(22)],
                 [utils.wallGrid(17), utils.wallGrid(23)],
                 [utils.wallGrid(17), utils.wallGrid(24)],
 
-                [utils.wallGrid(18), utils.wallGrid(21)],
+                // [utils.wallGrid(18), utils.wallGrid(21)],
                 [utils.wallGrid(18), utils.wallGrid(22)],
                 [utils.wallGrid(18), utils.wallGrid(23)],
                 [utils.wallGrid(18), utils.wallGrid(24)],
 
-                [utils.wallGrid(19), utils.wallGrid(21)],
+                // [utils.wallGrid(19), utils.wallGrid(21)],
                 [utils.wallGrid(19), utils.wallGrid(22)],
                 [utils.wallGrid(19), utils.wallGrid(23)],
                 [utils.wallGrid(19), utils.wallGrid(24)],
 
-                [utils.wallGrid(20), utils.wallGrid(21)],
-                [utils.wallGrid(20), utils.wallGrid(22)],
-                [utils.wallGrid(20), utils.wallGrid(23)],
-                [utils.wallGrid(20), utils.wallGrid(24)],
+                // [utils.wallGrid(20), utils.wallGrid(21)],
+                // [utils.wallGrid(20), utils.wallGrid(22)],
+                // [utils.wallGrid(20), utils.wallGrid(23)],
+                // [utils.wallGrid(20), utils.wallGrid(24)],
 
                 [utils.wallGrid(21), utils.wallGrid(21)],
                 [utils.wallGrid(21), utils.wallGrid(22)],
                 [utils.wallGrid(21), utils.wallGrid(23)],
                 [utils.wallGrid(21), utils.wallGrid(24)],
 
-                [utils.wallGrid(20), utils.wallGrid(20)],
+                // [utils.wallGrid(20), utils.wallGrid(20)],
 
-                [utils.wallGrid(21), utils.wallGrid(20)],
+                // [utils.wallGrid(21), utils.wallGrid(20)],
 
-                [utils.wallGrid(22), utils.wallGrid(20)],
+                // [utils.wallGrid(22), utils.wallGrid(20)],
                 [utils.wallGrid(22), utils.wallGrid(21)],
                 [utils.wallGrid(22), utils.wallGrid(22)],
                 [utils.wallGrid(22), utils.wallGrid(23)],
 
 
-                [utils.wallGrid(23), utils.wallGrid(20)],
+                // [utils.wallGrid(23), utils.wallGrid(20)],
                 [utils.wallGrid(23), utils.wallGrid(21)],
                 [utils.wallGrid(23), utils.wallGrid(22)],
                 [utils.wallGrid(23), utils.wallGrid(23)],
 
                 //cave entrance
 
-                [utils.wallGrid(35), utils.wallGrid(26)],
                 [utils.wallGrid(35), utils.wallGrid(27)],
                 [utils.wallGrid(35), utils.wallGrid(28)],
                 [utils.wallGrid(35), utils.wallGrid(29)],
                 [utils.wallGrid(35), utils.wallGrid(30)],
                 [utils.wallGrid(35), utils.wallGrid(31)],
 
-                [utils.wallGrid(36), utils.wallGrid(26)],
                 [utils.wallGrid(36), utils.wallGrid(27)],
                 [utils.wallGrid(36), utils.wallGrid(28)],
                 [utils.wallGrid(36), utils.wallGrid(29)],
                 [utils.wallGrid(36), utils.wallGrid(30)],
                 [utils.wallGrid(36), utils.wallGrid(31)],
 
-                [utils.wallGrid(37), utils.wallGrid(26)],
                 [utils.wallGrid(37), utils.wallGrid(27)],
                 [utils.wallGrid(37), utils.wallGrid(28)],
                 [utils.wallGrid(37), utils.wallGrid(29)],
@@ -234,7 +231,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(37), utils.wallGrid(32)],
 
 
-                [utils.wallGrid(38), utils.wallGrid(26)],
                 [utils.wallGrid(38), utils.wallGrid(27)],
                 [utils.wallGrid(38), utils.wallGrid(28)],
                 [utils.wallGrid(38), utils.wallGrid(29)],
@@ -243,25 +239,22 @@ window.OverworldMaps = {
                 [utils.wallGrid(38), utils.wallGrid(32)],
 
 
-                [utils.wallGrid(39), utils.wallGrid(26)],
                 [utils.wallGrid(39), utils.wallGrid(27)],
                 [utils.wallGrid(39), utils.wallGrid(28)],
                 [utils.wallGrid(39), utils.wallGrid(29)],
                 [utils.wallGrid(39), utils.wallGrid(30)],
                 [utils.wallGrid(39), utils.wallGrid(31)],
-                [utils.wallGrid(39), utils.wallGrid(32)],
+                // [utils.wallGrid(39), utils.wallGrid(32)],
 
 
-                [utils.wallGrid(40), utils.wallGrid(26)],
                 [utils.wallGrid(40), utils.wallGrid(27)],
                 [utils.wallGrid(40), utils.wallGrid(28)],
                 [utils.wallGrid(40), utils.wallGrid(29)],
                 [utils.wallGrid(40), utils.wallGrid(30)],
                 [utils.wallGrid(40), utils.wallGrid(31)],
-                [utils.wallGrid(40), utils.wallGrid(32)],
+                // [utils.wallGrid(40), utils.wallGrid(32)],
 
 
-                [utils.wallGrid(41), utils.wallGrid(26)],
                 [utils.wallGrid(41), utils.wallGrid(27)],
                 [utils.wallGrid(41), utils.wallGrid(28)],
                 [utils.wallGrid(41), utils.wallGrid(29)],
@@ -270,7 +263,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(41), utils.wallGrid(32)],
 
 
-                [utils.wallGrid(42), utils.wallGrid(26)],
                 [utils.wallGrid(42), utils.wallGrid(27)],
                 [utils.wallGrid(42), utils.wallGrid(28)],
                 [utils.wallGrid(42), utils.wallGrid(29)],
@@ -279,7 +271,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(42), utils.wallGrid(32)],
 
 
-                [utils.wallGrid(43), utils.wallGrid(26)],
                 [utils.wallGrid(43), utils.wallGrid(27)],
                 [utils.wallGrid(43), utils.wallGrid(28)],
                 [utils.wallGrid(43), utils.wallGrid(29)],
@@ -288,7 +279,6 @@ window.OverworldMaps = {
 
                 //desert platform
 
-                [utils.wallGrid(38), utils.wallGrid(3)],
                 [utils.wallGrid(38), utils.wallGrid(4)],
                 [utils.wallGrid(38), utils.wallGrid(5)],
                 [utils.wallGrid(38), utils.wallGrid(6)],
@@ -297,7 +287,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(38), utils.wallGrid(9)],
                 [utils.wallGrid(38), utils.wallGrid(10)],
                 
-                [utils.wallGrid(39), utils.wallGrid(3)],
                 [utils.wallGrid(39), utils.wallGrid(4)],
                 [utils.wallGrid(39), utils.wallGrid(5)],
                 [utils.wallGrid(39), utils.wallGrid(6)],
@@ -306,7 +295,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(39), utils.wallGrid(9)],
                 [utils.wallGrid(39), utils.wallGrid(10)],
 
-                [utils.wallGrid(40), utils.wallGrid(3)],
                 [utils.wallGrid(40), utils.wallGrid(4)],
                 [utils.wallGrid(40), utils.wallGrid(5)],
                 [utils.wallGrid(40), utils.wallGrid(6)],
@@ -315,7 +303,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(40), utils.wallGrid(9)],
                 [utils.wallGrid(40), utils.wallGrid(10)],
 
-                [utils.wallGrid(41), utils.wallGrid(3)],
                 [utils.wallGrid(41), utils.wallGrid(4)],
                 [utils.wallGrid(41), utils.wallGrid(5)],
                 [utils.wallGrid(41), utils.wallGrid(6)],
@@ -324,7 +311,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(41), utils.wallGrid(9)],
                 [utils.wallGrid(41), utils.wallGrid(10)],
 
-                [utils.wallGrid(42), utils.wallGrid(3)],
                 [utils.wallGrid(42), utils.wallGrid(4)],
                 [utils.wallGrid(42), utils.wallGrid(5)],
                 [utils.wallGrid(42), utils.wallGrid(6)],
@@ -333,7 +319,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(42), utils.wallGrid(9)],
                 [utils.wallGrid(42), utils.wallGrid(10)],
 
-                [utils.wallGrid(43), utils.wallGrid(3)],
                 [utils.wallGrid(43), utils.wallGrid(4)],
                 [utils.wallGrid(43), utils.wallGrid(5)],
                 [utils.wallGrid(43), utils.wallGrid(6)],
@@ -342,7 +327,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(43), utils.wallGrid(9)],
                 [utils.wallGrid(43), utils.wallGrid(10)],
 
-                [utils.wallGrid(44), utils.wallGrid(3)],
                 [utils.wallGrid(44), utils.wallGrid(4)],
                 [utils.wallGrid(44), utils.wallGrid(5)],
                 [utils.wallGrid(44), utils.wallGrid(6)],
@@ -351,7 +335,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(44), utils.wallGrid(9)],
                 [utils.wallGrid(44), utils.wallGrid(10)],
 
-                [utils.wallGrid(45), utils.wallGrid(3)],
                 [utils.wallGrid(45), utils.wallGrid(4)],
                 [utils.wallGrid(45), utils.wallGrid(5)],
                 [utils.wallGrid(45), utils.wallGrid(6)],
@@ -360,7 +343,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(45), utils.wallGrid(9)],
                 [utils.wallGrid(45), utils.wallGrid(10)],
 
-                [utils.wallGrid(46), utils.wallGrid(3)],
                 [utils.wallGrid(46), utils.wallGrid(4)],
                 [utils.wallGrid(46), utils.wallGrid(5)],
                 [utils.wallGrid(46), utils.wallGrid(6)],
@@ -369,7 +351,6 @@ window.OverworldMaps = {
                 [utils.wallGrid(46), utils.wallGrid(9)],
                 [utils.wallGrid(46), utils.wallGrid(10)],
 
-                [utils.wallGrid(47), utils.wallGrid(3)],
                 [utils.wallGrid(47), utils.wallGrid(4)],
                 [utils.wallGrid(47), utils.wallGrid(5)],
                 [utils.wallGrid(47), utils.wallGrid(6)],
