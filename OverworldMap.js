@@ -110,8 +110,8 @@ class OverworldMap {
 
 window.OverworldMaps = {
     DemoRoom: {
-        lowerSrc: "./Obsidian-Dragon/images/maps/tileset-outdoor-lower.png",
-        upperSrc: "./Obsidian-Dragon/images/maps/tileset-outdoor-upper.png",
+        lowerSrc: "./images/maps/tileset-outdoor-lower.png",
+        upperSrc: "./images/maps/tileset-outdoor-upper.png",
         gameObjects: {
             
             enemy: new Person({
