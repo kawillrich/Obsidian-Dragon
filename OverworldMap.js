@@ -110,14 +110,14 @@ class OverworldMap {
 
 window.OverworldMaps = {
     DemoRoom: {
-        lowerSrc: "/images/maps/tileset-outdoor-lower.png",
-        upperSrc: "/images/maps/tileset-outdoor-upper.png",
+        lowerSrc: "./images/maps/tileset-outdoor-lower.png",
+        upperSrc: "./images/maps/tileset-outdoor-upper.png",
         gameObjects: {
             
             enemy: new Person({
                 x: utils.withGrid16(11),
                 y: utils.withGrid16(5),
-                src: "/images/characters/kobold.png",
+                src: "./images/characters/kobold.png",
                 isMonster: true
             }), 
             hero: new Person({
