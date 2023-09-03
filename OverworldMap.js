@@ -117,7 +117,7 @@ window.OverworldMaps = {
             enemy: new Person({
                 x: utils.withGrid16(11),
                 y: utils.withGrid16(5),
-                src: "./images/characters/kobold.png",
+                src: "Obsidian-Dragon/images/characters/kobold.png",
                 isMonster: true
             }), 
             hero: new Person({
