@@ -243,7 +243,7 @@ window.OverworldMaps = {
                 [utils.wallGrid(39), utils.wallGrid(28)],
                 [utils.wallGrid(39), utils.wallGrid(29)],
                 [utils.wallGrid(39), utils.wallGrid(30)],
-                [utils.wallGrid(39), utils.wallGrid(31)],
+                // [utils.wallGrid(39), utils.wallGrid(31)],
                 // [utils.wallGrid(39), utils.wallGrid(32)],
 
 
@@ -251,7 +251,7 @@ window.OverworldMaps = {
                 [utils.wallGrid(40), utils.wallGrid(28)],
                 [utils.wallGrid(40), utils.wallGrid(29)],
                 [utils.wallGrid(40), utils.wallGrid(30)],
-                [utils.wallGrid(40), utils.wallGrid(31)],
+                // [utils.wallGrid(40), utils.wallGrid(31)],
                 // [utils.wallGrid(40), utils.wallGrid(32)],
 
 
