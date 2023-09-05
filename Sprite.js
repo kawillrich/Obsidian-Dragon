@@ -8,7 +8,6 @@ class Sprite {
             this.isLoaded = true;
         }
 
-
         //set up shadow
         this.shadow = new Image();
         this.useShadow = true;
@@ -19,7 +18,6 @@ class Sprite {
             this.isShadowLoaded = true;
         }
 
-
         //config anim and init state
         this.animations = config.animations || {
             "idle-down" : [ [0,0] ],
@@ -29,8 +27,7 @@ class Sprite {
             "walk-down" : [ [1,0],[2,0],[3,0],[0,0]] ,
             "walk-right": [ [1,2],[2,2],[3,2],[4,2],[5,2],[6,2],[7,2]],            
             "walk-up"   : [ [1,3],[2,3],[3,3],[0,3]],            
-            "walk-left" : [ [1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[7,1]]            
-
+            "walk-left" : [ [1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[7,1]]    
         }
 
         this.currentAnimation = "idle-right"; //config.currentAnimation || "idle-down";
@@ -109,7 +106,6 @@ class Sprite {
             )    
         }    
     this.updateAnimationProgress();
-
     } 
         //*may need to adjust cut sizes for attack effects and other objects
     }
