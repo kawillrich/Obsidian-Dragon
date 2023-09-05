@@ -116,16 +116,14 @@ window.OverworldMaps = {
                 y: utils.withGrid16(5),
                 src: "./images/characters/kobold.png",
                 isMonster: true,
-                vx: 0,
-                vy: 0
+                
             }), 
             hero: new Person({
                 isPlayerControlled: true,
                 x: utils.withGrid16(7),
                 y: utils.withGrid16(7),
                 name: "Hero",
-                vx: 0,
-                vy: 0
+                
             }),
         },
           
