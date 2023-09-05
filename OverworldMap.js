@@ -68,7 +68,6 @@ class OverworldMap {
                 if (this.gameObjects[prop].isMonster ) {
                     
                     // console.log(this.gameObjects[prop].x, this.gameObjects[prop].y)//, prop.y)
-                    console.log(this.gameObjects[prop].isMonster, this.gameObjects[prop])
                     if ((
                             x + 18 >= this.gameObjects[prop].x && 
                             x + 3 <= this.gameObjects[prop].x + 29
@@ -77,12 +76,13 @@ class OverworldMap {
                             y <= this.gameObjects[prop].y + 36
                         ))       
                     {
-                        // console.log('enemy')
-                        true;
+                       this.gameObjects[prop].isBlocking = true;                       
+                       console.log('enemy')
+                       return true;
     //may need to return a property value as true (i.e. isBlocking: true) in order to 
     //not RETURN and break out of the loop
                     } else {
-                        return false;
+                        this.gameObjects[prop].isBlocking = false;
                     }  
                 // }          
 		    }
