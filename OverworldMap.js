@@ -42,27 +42,33 @@ class OverworldMap {
                     )
                 )  {
                     console.log("wall")
-                    console.log(this.walls.coords[i][0], this.walls.coords[i][1])
                     return true;
                 }               
             }            
             return false;
     }
     
+    mountObjects() {
+        Object.keys(this.gameObjects).forEach( key => {
+            let object = this.gameObjects[key];
+            object.id = key;
+            
+        })
+    }
+
     checkMonster(currentX, currentY, direction) {        
-        const {x,y} = utils.nextPosition(currentX,currentY, direction);   
-        
+        const {x,y} = utils.nextPosition(currentX,currentY, direction);         
         for (let prop in this.gameObjects) 
 	    {
             // console.log(prop)//only prints the name of the property 'names'
             // console.log(this.gameObjects[prop])//only prints one object of all names because there's only one property in obj called names
-            for (let name in this.gameObjects[prop]) {
+            // for (let name in this.gameObjects[prop]) {
             //console.log(name)//prints the property name
                 // console.log(this.gameObjects[prop][name])//console logs out the name i.e. value of key
-                if (!this.gameObjects[prop].isPlayerControlled ) {
-                    // console.log('monster')
+                if (this.gameObjects[prop].isMonster ) {
+                    
                     // console.log(this.gameObjects[prop].x, this.gameObjects[prop].y)//, prop.y)
-                    // console.log(x, y)
+                    console.log(this.gameObjects[prop].isMonster, this.gameObjects[prop])
                     if ((
                             x + 18 >= this.gameObjects[prop].x && 
                             x + 3 <= this.gameObjects[prop].x + 29
@@ -72,11 +78,13 @@ class OverworldMap {
                         ))       
                     {
                         // console.log('enemy')
-                        return true;
+                        true;
+    //may need to return a property value as true (i.e. isBlocking: true) in order to 
+    //not RETURN and break out of the loop
                     } else {
                         return false;
                     }  
-                }          
+                // }          
 		    }
 	    }           
     }
@@ -109,8 +117,7 @@ window.OverworldMaps = {
     DemoRoom: {
         lowerSrc: "./images/maps/tileset-outdoor-lower.png",
         upperSrc: "./images/maps/tileset-outdoor-upper.png",
-        gameObjects: {
-            
+        gameObjects: {            
             enemy: new Person({
                 x: utils.withGrid16(11),
                 y: utils.withGrid16(5),
@@ -123,6 +130,13 @@ window.OverworldMaps = {
                 y: utils.withGrid16(7),
                 name: "Hero",                
             }),
+            enemy2: new Person({
+                x: utils.withGrid16(20),
+                y: utils.withGrid16(10),
+                src: "./images/characters/kobold.png",
+                isMonster: true,
+                isPlayerControlled: false
+            })
         },
           
         walls: {

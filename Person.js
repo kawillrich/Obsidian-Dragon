@@ -57,7 +57,7 @@ class Person extends GameObject {
             //property = x or y
             //change = 5 or -5
             //velocity = vx or vy
-            console.log(property, change, velocity, this[property], this.vx)
+            // console.log(property, change, velocity, this[property], this.vx)
             this[property] += this[velocity];
             
             this.movingProgressRemaining -= 1;
