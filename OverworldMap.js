@@ -1,12 +1,9 @@
 class OverworldMap {
     constructor(config) {
         this.gameObjects = config.gameObjects;
-
         this.walls = config.walls || {};
-
         this.lowerImage = new Image();
         this.lowerImage.src = config.lowerSrc;
-
         this.upperImage = new Image();
         this.upperImage.src = config.upperSrc;
     }
@@ -118,13 +115,17 @@ window.OverworldMaps = {
                 x: utils.withGrid16(11),
                 y: utils.withGrid16(5),
                 src: "./images/characters/kobold.png",
-                isMonster: true
+                isMonster: true,
+                vx: 0,
+                vy: 0
             }), 
             hero: new Person({
                 isPlayerControlled: true,
                 x: utils.withGrid16(7),
                 y: utils.withGrid16(7),
-                name: "Hero"
+                name: "Hero",
+                vx: 0,
+                vy: 0
             }),
         },
           

@@ -5,10 +5,10 @@ class Person extends GameObject {
         this.isPlayerControlled = config.isPlayerControlled || false;
 
         this.directionUpdate = {            
-            "up": ["y", -5],
-            "down": ["y", 5],
-            "left": ["x", -5],
-            "right": ["x", 5],
+            "up": ["y", -5, "vy"],
+            "down": ["y", 5, "vy"], 
+            "left": ["x", -5, "vx"],
+            "right": ["x", 5, "vx"],
 
         }
     }
@@ -34,7 +34,7 @@ class Person extends GameObject {
          
         if (behavior.type === "walk")   {      
             //stop here if space isn't free a
-            console.log(state.map.checkMonster(this.x, this.y, this.direction))
+            // console.log(state.map.checkMonster(this.x, this.y, this.direction))
             // console.log(state.map.isSpaceTaken(this.x, this.y, this.direction))
             if (state.map.isSpaceTaken(this.x, this.y, this.direction) )
             {
@@ -53,9 +53,11 @@ class Person extends GameObject {
     }
 
     updatePosition() {
-        
-            const [property, change] = this.directionUpdate[this.direction];
-            this[property] += change;
+            const [property, change, velocity] = this.directionUpdate[this.direction];
+            console.log(property, change, this[property])
+            this[velocity] = change;
+            this[property] += this[velocity];
+            
             this.movingProgressRemaining -= 1;
 
         
