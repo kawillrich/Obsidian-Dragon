@@ -115,21 +115,18 @@ window.OverworldMaps = {
                 x: utils.withGrid16(11),
                 y: utils.withGrid16(5),
                 src: "./images/characters/kobold.png",
-                isMonster: true,
-                
+                isMonster: true,                
             }), 
             hero: new Person({
                 isPlayerControlled: true,
                 x: utils.withGrid16(7),
                 y: utils.withGrid16(7),
-                name: "Hero",
-                
+                name: "Hero",                
             }),
         },
           
         walls: {
-            coords: [
-              
+            coords: [              
                 //upper left platform
                 [utils.wallGrid(0), utils.wallGrid(1)],
                 [utils.wallGrid(1), utils.wallGrid(1)],
@@ -357,9 +354,7 @@ window.OverworldMaps = {
                 [utils.wallGrid(47), utils.wallGrid(8)],
                 [utils.wallGrid(47), utils.wallGrid(9)],
                 [utils.wallGrid(47), utils.wallGrid(10)],
-
-            ]
-                 
+            ]                 
         },              
     }
     //can add more rooms here

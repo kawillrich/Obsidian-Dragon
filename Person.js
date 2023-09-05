@@ -9,7 +9,6 @@ class Person extends GameObject {
             "down": ["y", 5, "vy"], 
             "left": ["x", -5, "vx"],
             "right": ["x", 5, "vx"],
-
         }
     }
 
@@ -52,7 +51,7 @@ class Person extends GameObject {
         }
     }
 
-    updatePosition() {
+    updatePosition() {        
             const [property, change, velocity] = this.directionUpdate[this.direction];
             this[velocity] = change;
             //property = x or y
@@ -62,7 +61,6 @@ class Person extends GameObject {
             this[property] += this[velocity];
             
             this.movingProgressRemaining -= 1;
-
         
     }
 
