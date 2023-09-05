@@ -9,10 +9,7 @@ class GameObject {
             src: config.src || "./images/characters/hero.png",
         });
         this.isMonster = config.isMonster;
-    }
-
-    
-
+    }  
     update() {
 
     }
